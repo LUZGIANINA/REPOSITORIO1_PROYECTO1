@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import libreria_funciones as lf
 
-st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS EN PYTHON")
+st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS CV")
 
 st.write("Elaborado por: LUZ GARCIA CASTILLO")
 
