@@ -17,7 +17,7 @@ if sesion == "Inicio":
   st.image("Python_logo.png" )
 
 elif sesion == "Sesión 2":
-  st.write("Bienvenido la sesión 2")
+  st.write("Iniciamos la busqueda")
 
   precio = st.number_input("Ingrese el precio del producto", min_value = 0 , max_value = 5000 , value = 1200)
   descuento = st.number_input("Ingrese el descuento del producto del 0 al 100% ", min_value = 0 , max_value = 100 )
