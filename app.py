@@ -4,9 +4,9 @@ import libreria_funciones as lf
 
 st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS EN PYTHON")
 
-st.sidebar.title("Parámetros")
+st.sidebar.title("Busqueda")
 
-st.write("Elaborado por: Luz Garcia")
+st.write("Elaborado por: LUZ GARCIA CASTILLO")
 
 st.sidebar.image("logo cv.png")
 
