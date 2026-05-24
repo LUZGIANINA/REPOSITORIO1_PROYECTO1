@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import libreria_funciones as lf
 
-st.title("Mi primera aplicación en python")
+st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS EN PYTHON")
 
 st.sidebar.title("Parámetros")
 
