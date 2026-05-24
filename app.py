@@ -8,7 +8,7 @@ st.write("Elaborado por: LUZ GARCIA CASTILLO")
 
 st.sidebar.image("logo cv.png")
 
-st.sidebar.title("Busqueda")
+st.sidebar.title("Sesión 1")
 
 sesion = st.sidebar.selectbox("Seleccione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"] )
 
