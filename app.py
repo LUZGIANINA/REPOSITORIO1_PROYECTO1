@@ -10,9 +10,9 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-sesion = st.sidebar.selectbox("Seleccione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"] )
+sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Sesión 2","Sesión 3","Sesión 4"] )
 
-if sesion == "Sesión 1":
+if sesion == "Inicio":
   st.write("Bienvenidos al Explorador")
   st.image("Python_logo.png" )
 
