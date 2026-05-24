@@ -8,7 +8,7 @@ st.sidebar.title("Parámetros")
 
 st.write("Elaborado por: Luz Garcia")
 
-st.sidebar.image("DMC.png")
+st.sidebar.image("logo cv.png")
 
 sesion = st.sidebar.selectbox("Seleccione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"] )
 
