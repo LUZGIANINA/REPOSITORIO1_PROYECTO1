@@ -4,11 +4,11 @@ import libreria_funciones as lf
 
 st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS EN PYTHON")
 
-st.sidebar.title("Busqueda")
-
 st.write("Elaborado por: LUZ GARCIA CASTILLO")
 
 st.sidebar.image("logo cv.png")
+
+st.sidebar.title("Busqueda")
 
 sesion = st.sidebar.selectbox("Seleccione una sesión", ["Sesión 1","Sesión 2","Sesión 3","Sesión 4"] )
 
