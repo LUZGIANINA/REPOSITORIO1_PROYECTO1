@@ -10,13 +10,13 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Sesión 2","Sesión 3","Sesión 4"] )
+sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Buscar Producto","Stock","Sesión 4"] )
 
 if sesion == "Inicio":
   st.write("Bienvenidos al Explorador")
   st.image("Python_logo.png" )
 
-elif sesion == "Sesión 2":
+elif sesion == "Buscar producto":
   st.write("Iniciamos la busqueda")
 
   precio = st.number_input("Ingrese el precio del producto", min_value = 0 , max_value = 5000 , value = 1200)
@@ -27,8 +27,8 @@ elif sesion == "Sesión 2":
   st.write("El precio final del producto es: ", precio_final_producto  )
 
 
-elif sesion == "Sesión 3":
-  st.write("Bienvenido la sesión 3")
+elif sesion == "Stock":
+  st.write("Visualización de cantidades")
   
   fin_rango = st.slider("Selecione un valor",min_value = 0 , max_value=20, value =8 )
 
