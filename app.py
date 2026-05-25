@@ -19,7 +19,9 @@ if sesion == "Inicio":
 elif sesion == "Sesión 2":
   st.write("Iniciamos la busqueda")
 
- def agregar_producto():
+ inventario = []
+
+def agregar_producto():
 
     codigo = input("Ingrese código del producto: ")
     nombre = input("Ingrese nombre del producto: ")
