@@ -10,7 +10,7 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Buscar Producto","Stock","Sesión 4"] )
+sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Buscar Producto","Stock","Ingreso"] )
 
 if sesion == "Inicio":
   st.write("Bienvenidos al Explorador")
@@ -38,8 +38,8 @@ elif sesion == "Stock":
 
 
 
-else:
-  st.write("Bienvenido la sesión 4")
+else: sesión == "Ingreso"
+  st.write("Ingresar producto")
   principal = st.number_input("ingrese el monto del prestamo", value=1000)
   tasa_anual = st.number_input("ingrese la tasa anual en decimal", value=0.1)
   anios = st.number_input("ingrese el numero de año de prestamol", value=5)
