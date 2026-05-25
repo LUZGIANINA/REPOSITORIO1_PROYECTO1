@@ -19,7 +19,7 @@ if sesion == "Inicio":
 elif sesion == "Buscar":
   st.write("Busquemos el producto")
 
-  precio = st.number_input("Ingrese el producto", min_value = 0 , max_value = 5000 , value = 1200)
+  precio = st.number_input("Ingrese el producto", ")
   descuento = st.number_input("Ingrese el código del ´Producto", min_value = 0 , max_value = 100 )
 
   precio_final_producto = precio - (precio*(descuento/100))
