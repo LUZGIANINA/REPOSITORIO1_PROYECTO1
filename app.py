@@ -19,7 +19,7 @@ if sesion == "Inicio":
 elif sesion == "Sesión 2":
   st.write("Iniciamos la busqueda")
 
- inventario = []
+inventario = []
 
 def agregar_producto():
 
