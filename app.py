@@ -19,23 +19,12 @@ if sesion == "Inicio":
 elif sesion == "Sesión 2":
   st.write("Iniciamos la busqueda")
 
-inventario = []
+  precio = st.number_input("Ingrese el precio del producto", min_value = 0 , max_value = 5000 , value = 1200)
+  descuento = st.number_input("Ingrese el descuento del producto del 0 al 100% ", min_value = 0 , max_value = 100 )
 
-def agregar_producto():
+  precio_final_producto = precio - (precio*(descuento/100))
 
-    codigo = input("Ingrese código del producto: ")
-    nombre = input("Ingrese nombre del producto: ")
-    stock = int(input("Ingrese cantidad en stock: "))
-    precio = float(input("Ingrese precio del producto: "))
-
-    inventario.append([
-        codigo,
-        nombre,
-        stock,
-        precio
-    ])
-
-    print("\nProducto agregado correctamente.\n")
+  st.write("El precio final del producto es: ", precio_final_producto  )
 
 
 elif sesion == "Sesión 3":
