@@ -39,7 +39,7 @@ elif sesion == "Stock":
 
 
 else: sesión == "Ingreso"
-  st.write("Ingresar producto")
+  st.write("Ingreso")
   principal = st.number_input("ingrese el monto del prestamo", value=1000)
   tasa_anual = st.number_input("ingrese la tasa anual en decimal", value=0.1)
   anios = st.number_input("ingrese el numero de año de prestamol", value=5)
