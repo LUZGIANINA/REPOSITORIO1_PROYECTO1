@@ -77,8 +77,8 @@ elif opcion == "Visualizar Precio":
               st.success(
                 f"💰 Precio de {producto[1]}: S/ {producto[3]}"
             )
-
-            st.info(
+            
+        st.info(
                 f"📦 Stock disponible: {producto[2]}"
             )
 
