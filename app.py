@@ -59,24 +59,33 @@ elif opción == "Mostrar inventario":
         st.write("----------------------------")
 
 
+elif opcion == "Visualizar Precio":
 
-else: 
-  st.write("Ingresar Producto")
-    codigo = st.text_input("Código")
-    nombre = st.text_input("Nombre")
-    stock = st.number_input("Stock", min_value=0)
-    precio = st.number_input("Precio", min_value=0.0)
+    st.write("Consultar Precio")
 
-    if st.button("Guardar"):
+    nombres = []
 
-        inventario.append([
-            codigo,
-            nombre,
-            stock,
-            precio
-        ])
+    for producto in inventario:
+        nombres.append(producto[1])
 
-        st.success("Producto agregado correctamente")
-   
-  cuota = round(lf.cuota_prestamo(principal,tasa_anual,anios,pagos_anio),2)
-  st.write(f"El valor de la cuota es {cuota}")
+    seleccion = st.selectbox(
+        "Seleccione un producto",
+        nombres
+    )
+
+    for producto in inventario:
+
+        if producto[1] == seleccion:
+              st.success(
+                f"💰 Precio de {producto[1]}: S/ {producto[3]}"
+            )
+
+            st.info(
+                f"📦 Stock disponible: {producto[2]}"
+            )
+
+            # ALERTA
+            if producto[2] <= 5:
+                st.warning("⚠ Quedan pocas unidades")
+
+
