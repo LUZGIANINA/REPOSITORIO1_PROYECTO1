@@ -31,7 +31,7 @@ elif opción == "Agregar producto":
 
     if st.button("Guardar Producto"):
 
-        Inventario.append([código,nombre,stock,precio])
+        Inventario.append([código, nombre, stock, precio])
 
         st.success("✅ Producto agregado correctamente")
 
