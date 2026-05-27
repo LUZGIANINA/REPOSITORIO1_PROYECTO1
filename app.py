@@ -81,9 +81,8 @@ elif opcion == "Visualizar Precio":
         st.info(
                 f"📦 Stock disponible: {producto[2]}"
             )
-
-            # ALERTA
-            if producto[2] <= 5:
+        
+        if producto[2] <= 5:
                 st.warning("⚠ Quedan pocas unidades")
 
 
