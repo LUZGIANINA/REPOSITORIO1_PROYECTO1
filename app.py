@@ -16,7 +16,7 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-opción = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mpstrar inventario","Visualizar precio"] )
+opción = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mostrar inventario","Visualizar precio"] )
 
 if opción == "Inicio":
   st.write("Bienvenidos al Explorador")
@@ -58,7 +58,8 @@ elif opción == "Mostrar inventario":
 
 
 elif opcion == "Visualizar Precio":
-    st.write("Consultar Precio")
+
+    st.subheader("Consultar Precio")
 
     nombres = []
 
