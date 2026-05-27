@@ -23,8 +23,8 @@ if opción == "Inicio":
   st.image("Python_logo.png" )
 
 elif opción == "Agregar producto":
+    
   st.write("Registrar nuevo producto")
-
     codigo = st.text_input("Código del producto")
     nombre = st.text_input("Nombre del producto")
     stock = st.number_input("Cantidad en stock", min_value=0)
