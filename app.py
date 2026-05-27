@@ -16,7 +16,7 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-sesion = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mpstrar inventario","Visualizar precio"] )
+opción = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mpstrar inventario","Visualizar precio"] )
 
 if opción == "Inicio":
   st.write("Bienvenidos al Explorador")
