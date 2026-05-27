@@ -59,9 +59,9 @@ elif opción == "Mostrar inventario":
 
 elif opción == "Visualizar Precio":
     st.write("Consultar Precio")
-
+    
     nombres = ["Teclado","Mouse","Monitor"]
-
+    
     for producto in inventario:
         nombres.append(producto[1])
 
