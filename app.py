@@ -58,7 +58,6 @@ elif opción == "Mostrar inventario":
 
 
 elif opción == "Visualizar Precio":
-
     st.write("Consultar Precio")
 
     nombres = []
