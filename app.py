@@ -56,7 +56,8 @@ elif opción == "Mostrar inventario":
 
         st.write("----------------------------")
 
-elif opcion == "Visualizar Precio":
+
+ elif opcion == "Visualizar Precio":
 
     st.write("Consultar Precio")
 
