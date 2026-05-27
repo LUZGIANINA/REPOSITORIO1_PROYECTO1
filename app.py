@@ -43,8 +43,7 @@ elif opción == "Agregar producto":
 
 elif opción == "Mostrar inventario":
   st.write("Visualización de cantidades")
-  
-    for producto in inventario:
+  for producto in inventario:
 
         st.write("Código:", producto[0])
         st.write("Producto:", producto[1])
