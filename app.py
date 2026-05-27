@@ -2,7 +2,11 @@ import streamlit as st
 import numpy as np
 import libreria_funciones as lf
 
-inventario = []
+inventario = [
+    ["P001", "Teclado", 10, 80],
+    ["P002", "Mouse", 4, 35],
+    ["P003", "Monitor", 2, 650]
+]
 
 st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS CV")
 
