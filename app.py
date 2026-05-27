@@ -18,11 +18,11 @@ st.sidebar.title("Busqueda")
 
 sesion = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mpstrar inventario","Visualizar precio"] )
 
-if sesion == "Inicio":
+if opción == "Inicio":
   st.write("Bienvenidos al Explorador")
   st.image("Python_logo.png" )
 
-elif sesion == "Agregar producto":
+elif opción == "Agregar producto":
   st.write("Registrar nuevo producto")
 
     codigo = st.text_input("Código del producto")
@@ -42,14 +42,21 @@ elif sesion == "Agregar producto":
         st.success("✅ Producto agregado correctamente")
 
 
-elif sesion == "Stock":
+elif opción == "Mostrar inventario":
   st.write("Visualización de cantidades")
   
-  fin_rango = st.slider("Selecione un valor",min_value = 0 , max_value=20, value =8 )
+    for producto in inventario:
 
-  arreglo = np.arange(0 , fin_rango)
+        st.write("Código:", producto[0])
+        st.write("Producto:", producto[1])
+        st.write("Stock:", producto[2])
+        st.write("Precio: S/", producto[3])
 
-  st.write(arreglo)
+        # ALERTA DE STOCK
+        if producto[2] <= 5:
+            st.error("⚠ ALERTA: STOCK BAJO")
+
+        st.write("----------------------------")
 
 
 
