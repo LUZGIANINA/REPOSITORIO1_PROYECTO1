@@ -23,14 +23,23 @@ if sesion == "Inicio":
   st.image("Python_logo.png" )
 
 elif sesion == "Agregar producto":
-  st.write("Busquemos el producto")
+  st.write("Registrar nuevo producto")
 
-  precio = st.number_input("Ingrese el producto", " ")
-  descuento = st.number_input("Ingrese el código del ´Producto", min_value = 0 , max_value = 100 )
+    codigo = st.text_input("Código del producto")
+    nombre = st.text_input("Nombre del producto")
+    stock = st.number_input("Cantidad en stock", min_value=0)
+    precio = st.number_input("Precio", min_value=0.0)
 
-  precio_final_producto = precio - (precio*(descuento/100))
+    if st.button("Guardar Producto"):
 
-  st.write("El precio final del producto es: ", precio_final_producto  )
+        inventario.append([
+            codigo,
+            nombre,
+            stock,
+            precio
+        ])
+
+        st.success("✅ Producto agregado correctamente")
 
 
 elif sesion == "Stock":
