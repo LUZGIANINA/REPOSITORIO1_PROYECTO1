@@ -32,7 +32,7 @@ elif opción == "Agregar producto":
     if st.button("Guardar Producto"):
 
         inventario.append([
-            codigo,
+            código,
             nombre,
             stock,
             precio
