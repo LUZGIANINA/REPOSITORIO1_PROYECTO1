@@ -40,10 +40,21 @@ elif sesion == "Stock":
 
 else: 
   st.write("Ingresar Producto")
-  principal = st.number_input("ingrese el monto del prestamo", value=1000)
-  tasa_anual = st.number_input("ingrese la tasa anual en decimal", value=0.1)
-  anios = st.number_input("ingrese el numero de año de prestamol", value=5)
-  pagos_anio = st.number_input("Ingrese la cantidad de pagos por año", value=12)
+    codigo = st.text_input("Código")
+    nombre = st.text_input("Nombre")
+    stock = st.number_input("Stock", min_value=0)
+    precio = st.number_input("Precio", min_value=0.0)
+
+    if st.button("Guardar"):
+
+        inventario.append([
+            codigo,
+            nombre,
+            stock,
+            precio
+        ])
+
+        st.success("Producto agregado correctamente")
    
   cuota = round(lf.cuota_prestamo(principal,tasa_anual,anios,pagos_anio),2)
   st.write(f"El valor de la cuota es {cuota}")
