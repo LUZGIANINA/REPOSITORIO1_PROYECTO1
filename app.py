@@ -25,7 +25,8 @@ if opción == "Inicio":
 elif opción == "Agregar producto":
     
   st.write("Registrar nuevo producto")
-    codigo = st.text_input("Código del producto")
+    
+    código = st.text_input("Código del producto")
     nombre = st.text_input("Nombre del producto")
     stock = st.number_input("Cantidad en stock", min_value=0)
     precio = st.number_input("Precio", min_value=0.0)
