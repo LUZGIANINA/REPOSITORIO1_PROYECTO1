@@ -59,7 +59,7 @@ elif opción == "Mostrar inventario":
 
 elif opcion == "Visualizar Precio":
 
-    st.subheader("Consultar Precio")
+    st.write("Consultar Precio")
 
     nombres = []
 
