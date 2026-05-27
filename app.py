@@ -2,6 +2,12 @@ import streamlit as st
 import numpy as np
 import libreria_funciones as lf
 
+inventario = [
+    ["P001", "Teclado", 10, 80],
+    ["P002", "Mouse", 4, 35],
+    ["P003", "Monitor", 2, 650]
+]
+
 st.title("SISTEMA DE INVENTARIOS DE PRODUCTOS CV")
 
 st.write("Elaborado por: LUZ GARCIA CASTILLO")
@@ -10,13 +16,13 @@ st.sidebar.image("logo cv.png")
 
 st.sidebar.title("Busqueda")
 
-sesion = st.sidebar.selectbox("Seleccione una sesión", ["Inicio","Buscar","Stock","Ingreso"] )
+sesion = st.sidebar.selectbox("Seleccione una opción", ["Inicio","Agregar producto","Mpstrar inventario","Visualizar precio"] )
 
 if sesion == "Inicio":
   st.write("Bienvenidos al Explorador")
   st.image("Python_logo.png" )
 
-elif sesion == "Buscar":
+elif sesion == "Agregar producto":
   st.write("Busquemos el producto")
 
   precio = st.number_input("Ingrese el producto", " ")
